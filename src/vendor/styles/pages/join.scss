@@ -1,0 +1,25 @@
+.seat_button {
+    // display: inline-block;
+    z-index: 1;
+    position: relative;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.125rem;    
+    margin: 1px;     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;    
+    text-decoration: none;
+    box-shadow: none !important;
+    font-variant-numeric: lining-nums;
+    -moz-font-feature-settings: "lnum" 1;
+    -moz-font-feature-settings: "lnum=1";
+    -ms-font-feature-settings: "lnum" 1;
+    -o-font-feature-settings: "lnum" 1;
+    -webkit-font-feature-settings: "lnum" 1;
+    font-feature-settings: "lnum" 1;
+    @media (max-width: 1000px) {
+      padding: 1rem, 1rem ;
+    }
+  }

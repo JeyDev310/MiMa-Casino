@@ -1,0 +1,33 @@
+/*
+
+Game card button scale transform animation.
+
+*/
+
+@-o-keyframes game-card-button-scale-transform-animation-fade {
+  0%    { transform: scale(1);   }
+  50%   { transform: scale(1.1); }
+  100%  { transform: scale(1);   }
+}
+
+@keyframes game-card-button-scale-transform-animation-fade {
+  0%    { transform: scale(1);   }
+  50%   { transform: scale(1.1); }
+  100%  { transform: scale(1);   }
+}
+
+.game-card-button-scale-transform-animation {
+    transform: scale(1);
+         -o-animation: game-card-button-scale-transform-animation-fade 1s ease-in-out infinite;
+            animation: game-card-button-scale-transform-animation-fade 1s ease-in-out infinite;
+}
+
+/*
+
+Custom Button Component Styles.
+
+*/
+
+.btn-custom-coming-soon {
+  filter: drop-shadow(0px 0px 15px rgba(179, 18, 23, 1));
+}

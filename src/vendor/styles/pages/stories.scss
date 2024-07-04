@@ -1,0 +1,344 @@
+/*
+
+Base styles for parent elements plus responsive features.
+
+*/
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.stories__container {
+  margin: 0 -12px;
+}
+
+.stories__slide {
+  height: 812px;
+  margin: 0 12px;
+  padding: 56px 0;
+  -webkit-transition: padding .25s;
+  -o-transition: padding .25s;
+  transition: padding .25s;
+}
+
+.stories__item {
+  position: relative;
+  height: 100%;
+  padding: 32px;
+  border-radius: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  -webkit-transition: height .25s;
+  -o-transition: height .25s;
+  transition: height .25s;
+}
+
+.stories__item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(13.03%, rgba(9, 10, 11, 0.671247)), color-stop(57.3%, rgba(0, 0, 0, 0.366149)));
+  background: -webkit-linear-gradient(top, rgba(9, 10, 11, 0.671247) 13.03%, rgba(0, 0, 0, 0.366149) 57.3%);
+  background: -o-linear-gradient(top, rgba(9, 10, 11, 0.671247) 13.03%, rgba(0, 0, 0, 0.366149) 57.3%);
+  background: linear-gradient(180deg, rgba(9, 10, 11, 0.671247) 13.03%, rgba(0, 0, 0, 0.366149) 57.3%);
+  border-radius: 24px;
+}
+
+.stories__progress {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -2px 24px;
+}
+
+.stories__line {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  margin: 0 2px;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-transition: background .25s;
+  -o-transition: background .25s;
+  transition: background .25s;
+}
+
+.stories__line.active {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.stories__user {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 500;
+  color: #ffffff;
+  -webkit-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+
+.stories__user:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.stories__ava {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  margin-right: 16px;
+  font-size: 0;
+}
+
+.stories__pic {
+  width: 100%;
+  min-height: 100%;
+}
+
+.stories__man {
+  margin-bottom: 2px;
+  font-size: 13px;
+}
+
+.stories__man.confirm:after {
+  content: "";
+  position: relative;
+  bottom: -2px;
+  display: inline-block;
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #7FBA7A url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='7' viewBox='0 0 8 7'%3E%3Cpolygon fill='%23FFF' points='6.8 9 5.2 7.4 4 8.6 6.8 11.4 12 6.2 10.8 5' transform='translate(-4 -5)'/%3E%3C/svg%3E%0A") no-repeat 50% 50%/8px 7px;
+}
+
+.stories__user .stories__game {
+  margin-bottom: 2px;
+  font-size: 12px;
+}
+
+.stories .status {
+  color: #ffffff;
+}
+
+.stories__form {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  z-index: 2;
+}
+
+.stories__input {
+  width: 100%;
+  height: 80px;
+  padding: 0 145px 0 64px;
+  border-radius: 25px;
+  background: rgba(228, 228, 228, 0.1);
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.stories__input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.stories__input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.stories__input::placeholder {
+  color: #ffffff;
+}
+
+.stories__smile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 64px;
+  padding-left: 12px;
+  font-size: 0;
+  -webkit-transition: opacity .25s;
+  -o-transition: opacity .25s;
+  transition: opacity .25s;
+}
+
+.stories__smile .icon {
+  font-size: 16px;
+  fill: #ffffff;
+}
+
+.stories__smile:hover {
+  opacity: .8;
+}
+
+.stories__btn {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  min-width: 122px;
+}
+
+.stories .slick-list {
+  padding: 0 !important;
+}
+
+.stories .slick-center {
+  padding: 0;
+}
+
+.stories .slick-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #3F8CFF;
+  font-size: 0;
+  -webkit-transition: background .25s;
+  -o-transition: background .25s;
+  transition: background .25s;
+}
+
+.stories .slick-arrow .icon {
+  font-size: 12px;
+  fill: #ffffff;
+}
+
+.stories .slick-arrow:hover {
+  background: #0049C6;
+}
+
+.stories .slick-prev {
+  left: -56px;
+}
+
+.stories .slick-next {
+  right: -56px;
+}
+
+.btn_purple {
+  background: #6C5DD3;
+  color: #ffffff;
+}

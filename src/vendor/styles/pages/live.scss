@@ -1,0 +1,172 @@
+/*
+
+Base styles for parent elements plus responsive features.
+
+*/
+
+.rs-social-button__icon {
+  position: relative;
+  z-index: 1;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.rs-button__value {
+  // display: inline-block;
+  z-index: 1;
+  position: relative;
+  font-size: 22px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.rs-button__helper {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.live-context-menu__sub {
+  background-color: rgba(28, 28, 28, 0.9) !important;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5) !important;
+  border-radius: 5px !important;
+  min-width: 14rem !important;
+}
+
+@-o-keyframes live-auto-action-progress-fade {
+  0% {
+    opacity: 1.00;
+    filter: invert(0) hue-rotate(-130deg);
+  }
+
+  50% {
+    opacity: 1.00;
+    filter: invert(1) hue-rotate(-130deg);
+  }
+
+  100% {
+    opacity: 1.00;
+    filter: invert(0) hue-rotate(-130deg);
+  }
+}
+
+@keyframes live-auto-action-progress-fade {
+  0% {
+    opacity: 1.00;
+    filter: invert(0) hue-rotate(-130deg);
+  }
+
+  50% {
+    opacity: 1.00;
+    filter: invert(1) hue-rotate(-130deg);
+  }
+
+  100% {
+    opacity: 1.00;
+    filter: invert(0) hue-rotate(-130deg);
+  }
+}
+
+.live-auto-action-progress {
+  opacity: 1.00;
+  filter: invert(0) hue-rotate(-130deg);
+  -o-animation: live-auto-action-progress-fade 0.5s ease-in-out infinite;
+  animation: live-auto-action-progress-fade 0.5s ease-in-out infinite;
+}
+
+.bg-reality-check-timer {
+  color: #fff !important;
+  background: rgba(0, 0, 0, 1.0) !important;
+  border-radius: 5px 5px 5px 5px !important;
+}
+
+.action-panel-parent-element {
+  width: 80%;
+  transform: scale(0.85);
+  transform-origin: bottom;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+
+@-o-keyframes render-seat-fade {
+  0% {
+    opacity: 0.00;
+    filter: invert(0) hue-rotate(-130deg);
+  }
+
+  100% {
+    opacity: 1.00;
+    filter: invert(0) hue-rotate(-130deg);
+  }
+}
+
+@keyframes render-seat-fade {
+  0% {
+    opacity: 0.00;
+    filter: invert(0) hue-rotate(-130deg);
+  }
+
+  100% {
+    opacity: 1.00;
+    filter: invert(0) hue-rotate(-130deg);
+  }
+}
+
+.render-seat {
+  opacity: 1.00;
+  filter: invert(0) hue-rotate(-130deg);
+
+}
+
+@media (max-width: 1600px) {
+  .action-panel-parent-element {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .action-panel-parent-element {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .action-panel-parent-element {
+    width: 85%;
+  }
+}
+
+@media (max-width: 992px) {
+  .action-panel-parent-element {
+    width: 95%;
+    transform: scale(0.65);
+  }
+}
+
+@media (max-width: 768px) {
+  .action-panel-parent-element {
+    width: 100%;
+    transform: scale(0.65);
+  }
+}
+
+@media (max-width: 576px) {
+  .action-panel-parent-element {
+    width: 100%;
+    transform: scale(0.65);
+  }
+}

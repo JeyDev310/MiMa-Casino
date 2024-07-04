@@ -1,0 +1,23 @@
+{
+    "html.format.enable": true,
+    "[html]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.detectIndentation": false,
+        "editor.wordWrap": "on",
+    },
+    "javascript.format.enable": true,
+    "[javascript]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.detectIndentation": false,
+        "editor.wordWrap": "on",
+    },
+    "yaml.format.enable": true,
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.detectIndentation": false,
+        "editor.wordWrap": "on",
+    },
+}

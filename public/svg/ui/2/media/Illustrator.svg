@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>Illustrator</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Design-&amp;-Development" sketch:type="MSArtboardGroup" transform="translate(-81.000000, -721.000000)" fill="#231F1F">
+            <g id="Illustrator" sketch:type="MSLayerGroup" transform="translate(81.000000, 721.000000)">
+                <path d="M16.145,14.976 L18.352,19.988 L13.939,19.988 L16.145,14.976 L16.145,14.976 Z M38,10 L38,28 C38,33.523 33.522,38 27.999,38 L9.999,38 C4.477,38 0,33.523 0,28 L0,10 C0,4.477 4.477,0 9.999,0 L27.999,0 C33.522,0 38,4.477 38,10 L38,10 Z M24,12 C24,12.552 24.447,13 24.999,13 C25.552,13 26,12.552 26,12 C26,11.448 25.552,11 24.999,11 C24.447,11 24,11.448 24,12 L24,12 Z M22.334,23.954 C22.334,23.812 22.299,23.653 22.209,23.494 L17.545,13.223 C17.293,12.674 16.863,12.338 16.235,12.338 L16.127,12.338 C15.499,12.338 15.051,12.674 14.8,13.223 L10.136,23.494 C10.046,23.671 9.992,23.83 9.992,23.989 C9.992,24.556 10.441,24.999 11.015,24.999 C11.481,24.999 11.858,24.751 12.037,24.308 L13.096,21.918 L19.195,21.918 L20.218,24.238 C20.415,24.698 20.774,24.999 21.294,24.999 C21.886,24.999 22.334,24.538 22.334,23.954 L22.334,23.954 Z M26.003,16.118 C26.003,15.487 25.555,14.985 24.99,14.985 C24.426,14.985 23.994,15.487 23.994,16.118 L23.994,23.884 C23.994,24.516 24.443,24.999 24.99,24.999 C25.555,24.999 26.003,24.516 26.003,23.884 L26.003,16.118 L26.003,16.118 Z" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

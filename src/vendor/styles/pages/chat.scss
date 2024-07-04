@@ -1,0 +1,2939 @@
+@import '../_custom-variables/pages';
+
+$chat-wrapper-min-height: 400px !default;
+$chat-sidebox-width: 20rem !default;
+$chat-sidebox-border-width: 1px !default;
+$chat-contacts-padding-y: .625rem !default;
+
+@-o-keyframes fadeIt {
+  0% {
+    background-color: #bd2722;
+  }
+
+  50% {
+    background-color: #df3c37;
+  }
+
+  100% {
+    background-color: #bd2722;
+  }
+}
+
+@keyframes fadeIt {
+  0% {
+    background-color: #bd2722;
+  }
+
+  50% {
+    background-color: #df3c37;
+  }
+
+  100% {
+    background-color: #bd2722;
+  }
+}
+
+.backgroundAnimated {
+  background-image: none !important;
+  -o-animation: fadeIt 1s ease-in-out infinite;
+  animation: fadeIt 1s ease-in-out infinite;
+}
+
+@-o-keyframes bg-active-player-timer-panel-fade {
+  0% {
+    background-color: #bd2722;
+  }
+
+  50% {
+    background-color: #df3c37;
+  }
+
+  100% {
+    background-color: #bd2722;
+  }
+}
+
+@keyframes bg-active-player-timer-panel-fade {
+  0% {
+    background-color: #bd2722;
+  }
+
+  50% {
+    background-color: #df3c37;
+  }
+
+  100% {
+    background-color: #bd2722;
+  }
+}
+
+.bg-active-player-timer-panel {
+  background-image: none !important;
+  -o-animation: bg-active-player-timer-panel-fade 1s ease-in-out infinite;
+  animation: bg-active-player-timer-panel-fade 1s ease-in-out infinite;
+}
+
+@-o-keyframes bg-active-player-timer-outline-fade {
+  0% {
+    outline-color: #dfb83700;
+  }
+
+  50% {
+    outline-color: #fdc91ec5;
+  }
+
+  100% {
+    outline-color: #dfb83700;
+  }
+}
+
+@keyframes bg-active-player-timer-outline-fade {
+  0% {
+    outline-color: #dfb83700;
+  }
+
+  50% {
+    outline-color: #fdc91ec5;
+  }
+
+  100% {
+    outline-color: #dfb83700;
+  }
+}
+
+.bg-active-player-timer-outline {
+  border-radius: 4px;
+  outline: solid 3px;
+  outline-width: 3px;
+  outline-offset: -3px;
+  -o-animation: bg-active-player-timer-outline-fade 1s ease-in-out infinite;
+  animation: bg-active-player-timer-outline-fade 1s ease-in-out infinite;
+}
+
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+@keyframes bg-active-player-timer-progress-linear {
+  0% {
+    background-size: 0 0px, 0px 0, 100% 4px, 0px 0;
+    background-image:
+      linear-gradient(to right, rgba(217, 83, 79, 0.75) 100%, rgba(217, 83, 79, 0.75) 100%),
+      linear-gradient(to bottom, rgba(217, 83, 79, 0.75) 100%, rgba(217, 83, 79, 0.75) 100%), 
+      linear-gradient(to right, #DA2F2F 0.01%, #DF5454 28.26%, #EA9D44 47.99%, #249F4A 72.51%, #46CB6B 99.98%),
+      linear-gradient(to bottom, rgba(217, 83, 79, 0.75) 100%, rgba(217, 83, 79, 0.75) 100%);
+  }
+
+  25% {
+    background-size: 0 0px, 0px 0, 75% 4px, 0px 0;
+    background-image: 
+      linear-gradient(to right, rgba(217, 83, 79, 0.75) 100%, rgba(217, 83, 79, 0.75) 100%),
+      linear-gradient(to bottom, rgba(217, 83, 79, 0.75) 100%, rgba(217, 83, 79, 0.75) 100%),
+      linear-gradient(to right, #DA2F2F 0.01%, #DF5454 28.26%, #EA9D44 47.99%, #709f24 72.51%),
+      linear-gradient(to bottom, rgba(217, 83, 79, 0.75) 100%, rgba(217, 83, 79, 0.75) 100%);
+  }
+
+  50% {
+    background-size: 0 0px, 0px 0, 50% 4px, 0px 0;
+    background-image:
+      linear-gradient(to right, rgba(217, 83, 79, 0.75) 100%, rgba(217, 83, 79, 0.75) 100%),
+      linear-gradient(to bottom, rgba(217, 83, 79, 0.75) 100%, rgba(217, 83, 79, 0.75) 100%), 
+      linear-gradient(to right, #DA2F2F 0.01%, #df5954 28.26%, #ea8744 47.99%, #EA9D44 47.99%),
+      linear-gradient(to bottom, rgba(217, 83, 79, 0.75) 100%, rgba(217, 83, 79, 0.75) 100%);
+  }
+
+  75% {
+    background-size: 0 0px, 0px 0, 25% 4px, 0px 0;
+    background-image:
+      linear-gradient(to right, rgba(217, 83, 79, 0.75) 100%, rgba(217, 83, 79, 0.75) 100%),
+      linear-gradient(to bottom, rgba(217, 83, 79, 0.75) 100%, rgba(217, 83, 79, 0.75) 100%), 
+      linear-gradient(to right, #DA2F2F 0.01%,#da492f 0.01%, #da512f 0.01%),
+      linear-gradient(to bottom, rgba(217, 83, 79, 0.75) 100%, rgba(217, 83, 79, 0.75) 100%);
+  }
+
+  100% {
+    background-size: 0 0px, 0px 0, 0% 4px, 0px 0;
+    background-image:
+      linear-gradient(to right, rgba(217, 83, 79, 0.75) 100%, rgba(217, 83, 79, 0.75) 100%),
+      linear-gradient(to bottom, rgba(217, 83, 79, 0.75) 100%, rgba(217, 83, 79, 0.75) 100%),  
+      linear-gradient(to right, #DA2F2F 0.01%),
+      linear-gradient(to bottom, rgba(217, 83, 79, 0.75) 100%, rgba(217, 83, 79, 0.75) 100%);
+  }
+}
+
+
+.bg-active-player-timer-progress {
+  background-repeat: repeat-y;
+  background-image:    
+    linear-gradient(to right, rgba(217, 83, 79, 0.75) 100%, rgba(217, 83, 79, 0.75) 100%),
+    linear-gradient(to bottom, rgba(217, 83, 79, 0.75) 100%, rgba(217, 83, 79, 0.75) 100%),
+    linear-gradient(to right, #DA2F2F 0.01%, #DF5454 28.26%),
+    linear-gradient(to bottom, rgba(217, 83, 79, 0.75) 100%, rgba(217, 83, 79, 0.75) 100%);
+  background-size: 100% 0px, 0px 100%, 100% 4px, 0px 100%;
+  animation: bg-active-player-timer-progress-linear 20s linear normal;  
+  animation-play-state: running;
+}
+
+@-o-keyframes fadeIt2 {
+  0% {
+    background-color: #000000;
+  }
+
+  50% {
+    background-color: #2e2e2e;
+  }
+
+  100% {
+    background-color: #000000;
+  }
+}
+
+@keyframes fadeIt2 {
+  0% {
+    background-color: #000000;
+  }
+
+  50% {
+    background-color: #2e2e2e;
+  }
+
+  100% {
+    background-color: #000000;
+  }
+}
+
+.backgroundAnimatedPotSize {
+  background-image: none !important;
+  -o-animation: fadeIt2 0.5s ease-in-out infinite;
+  animation: fadeIt2 0.5s ease-in-out infinite;
+}
+
+@-o-keyframes fadeIt5 {
+  0% {
+    background-color: #000000;
+  }
+
+  50% {
+    background-color: #2e2e2e;
+  }
+
+  100% {
+    background-color: #000000;
+  }
+}
+
+@keyframes fadeIt5 {
+  0% {
+    background-color: #000000;
+  }
+
+  50% {
+    background-color: #2e2e2e;
+  }
+
+  100% {
+    background-color: #000000;
+  }
+}
+
+.backgroundAnimatedInsightsItem {
+  background-image: none !important;
+  -o-animation: fadeIt5 1s ease-in-out infinite;
+  animation: fadeIt5 1s ease-in-out infinite;
+}
+
+@-o-keyframes fadeIt4 {
+  0% {
+    background-color: #ffffff00;
+  }
+
+  50% {
+    background-color: #ffffff2c;
+  }
+
+  100% {
+    background-color: #ffffff00;
+  }
+}
+
+@keyframes fadeIt4 {
+  0% {
+    background-color: #ffffff00;
+  }
+
+  50% {
+    background-color: #ffffff2c;
+  }
+
+  100% {
+    background-color: #ffffff00;
+  }
+}
+
+.backgroundAnimatedShowdownWinner {
+  background-image: none !important;
+  -o-animation: fadeIt4 2s ease-in-out infinite;
+  animation: fadeIt4 2s ease-in-out infinite;
+}
+
+@-o-keyframes bg-flash-deposit-1-fade {
+  0% {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  50% {
+    background-color: #00000071;
+  }
+
+  100% {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@keyframes bg-flash-deposit-1-fade {
+  0% {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  50% {
+    background-color: #00000071;
+  }
+
+  100% {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.bg-flash-deposit-1 {
+  background-image: none !important;
+  -o-animation: bg-flash-deposit-1-fade 1s ease-in-out infinite;
+  animation: bg-flash-deposit-1-fade 1s ease-in-out infinite;
+}
+
+/*
+
+PlayerState Panel: outline-flash-player-state
+
+*/
+
+@-o-keyframes outline-flash-player-state-fade {
+  0% {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  50% {
+    background-color: rgba(0, 0, 0, 1.0);
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+
+@keyframes outline-flash-player-state-fade {
+  0% {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  50% {
+    background-color: rgba(0, 0, 0, 1.0);
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+
+.outline-flash-player-state {
+  background-color: rgba(0, 0, 0, 0.9);
+  -o-animation: outline-flash-player-state-fade 1s ease-in-out normal;
+  animation: outline-flash-player-state-fade 1s ease-in-out normal;
+}
+
+/*
+
+Dealer Panel: bg-dealer-ui-panel
+
+*/
+
+@-o-keyframes bg-dealer-ui-panel-fade {
+  0% {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  50% {
+    background-color: rgba(0, 0, 0, 1.00);
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+}
+
+@keyframes bg-dealer-ui-panel-fade {
+  0% {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  50% {
+    background-color: rgba(0, 0, 0, 1.00);
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+}
+
+.bg-dealer-ui-panel {
+  background-image: none !important;
+  -o-animation: bg-dealer-ui-panel-fade 5s ease-in-out infinite;
+  animation: bg-dealer-ui-panel-fade 5s ease-in-out infinite;
+}
+
+@-o-keyframes bg-flash-presence-fade {
+  0% {
+    background-color: #000000;
+  }
+
+  50% {
+    background-color: #2e2e2e;
+  }
+
+  100% {
+    background-color: #000000;
+  }
+}
+
+@keyframes bg-flash-presence-fade {
+  0% {
+    background-color: #000000;
+  }
+
+  50% {
+    background-color: #2e2e2e;
+  }
+
+  100% {
+    background-color: #000000;
+  }
+}
+
+.bg-flash-presence {
+  background-image: none !important;
+  -o-animation: bg-flash-presence-fade 2s ease-in-out infinite;
+  animation: bg-flash-presence-fade 2s ease-in-out infinite;
+}
+
+/*
+
+PlayerList item: bg-player-item-action-all-in
+
+*/
+
+@-o-keyframes bg-player-item-action-all-in-fade {
+  0% {
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+
+  50% {
+    background-color: rgba(255, 0, 0, 0.3);
+  }
+
+  100% {
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+}
+
+@keyframes bg-player-item-action-all-in-fade {
+  0% {
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+
+  50% {
+    background-color: rgba(255, 0, 0, 0.3);
+  }
+
+  100% {
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+}
+
+.bg-player-item-action-all-in {
+  background-image: none !important;
+  -o-animation: bg-player-item-action-all-in-fade 1s ease-in-out infinite;
+  animation: bg-player-item-action-all-in-fade 1s ease-in-out infinite;
+}
+
+/*
+
+PlayerList item: bg-player-item-action-inactive
+
+*/
+
+@-o-keyframes bg-player-item-action-inactive-fade {
+  0% {
+    background-color: rgba(0, 0, 0, 0.0);
+  }
+
+  50% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0.0);
+  }
+}
+
+@keyframes bg-player-item-action-inactive-fade {
+  0% {
+    background-color: rgba(0, 0, 0, 0.0);
+  }
+
+  50% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0.0);
+  }
+}
+
+.bg-player-item-action-inactive {
+  background-image: none !important;
+  -o-animation: bg-player-item-action-inactive-fade 1s ease-in-out infinite;
+  animation: bg-player-item-action-inactive-fade 1s ease-in-out infinite;
+}
+
+/*
+
+Player state panel background color change
+
+*/
+
+@-o-keyframes bg-player-state-panel-current-active-fade {
+  0% {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  50% {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+@keyframes bg-player-state-panel-current-active-fade {
+  0% {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  50% {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.bg-player-state-panel-current-active {
+  background-image: none !important;
+  background-color: rgba(0, 0, 0, 0.8);
+  -o-animation: bg-player-state-panel-current-active-fade 1s ease-in-out infinite;
+  animation: bg-player-state-panel-current-active-fade 1s ease-in-out infinite;
+}
+
+/*
+
+Game action opacity animation variant 1.
+
+*/
+
+@-o-keyframes bg-player-item-action-opacity-drop-fade {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1.0;
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
+
+@keyframes bg-player-item-action-opacity-drop-fade {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1.0;
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
+
+.bg-player-item-action-opacity-drop {
+  opacity: 0.5;
+  transform: scale(1);
+  -o-animation: bg-player-item-action-opacity-drop-fade 0.4s ease-in-out normal;
+  animation: bg-player-item-action-opacity-drop-fade 0.4s ease-in-out normal;
+}
+
+/*
+
+Game action opacity animation variant 2.
+
+*/
+
+@-o-keyframes bg-player-action-opacity-drop-var-2-fade {
+  0% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1.0;
+    transform: scale(1.15);
+  }
+
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+}
+
+@keyframes bg-player-action-opacity-drop-var-2-fade {
+  0% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1.0;
+    transform: scale(1.15);
+  }
+
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+}
+
+.bg-player-action-opacity-drop-var-2 {
+  opacity: 0.8;
+  transform: scale(1);
+  -o-animation: bg-player-action-opacity-drop-var-2-fade 0.4s ease-in-out normal;
+  animation: bg-player-action-opacity-drop-var-2-fade 0.4s ease-in-out normal;
+}
+
+/*
+
+Player panel item opacity animation.
+
+*/
+
+@-o-keyframes bg-player-panel-item-opacity-drop-fade {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1.0;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
+
+@keyframes bg-player-panel-item-opacity-drop-fade {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1.0;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
+
+.bg-player-panel-item-opacity-drop {
+  opacity: 0.5;
+  transform: scale(1);
+  -o-animation: bg-player-panel-item-opacity-drop-fade 1s ease-in-out infinite;
+  animation: bg-player-panel-item-opacity-drop-fade 1s ease-in-out infinite;
+}
+
+/*
+
+Community card item transform animation.
+
+*/
+
+@-o-keyframes community-card-item-transform-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes community-card-item-transform-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+.community-card-item-transform-animation {
+  opacity: 1.0;
+  transform: translate(0px, 0px);
+  -o-animation: community-card-item-transform-animation-fade 0.2s ease-in-out normal;
+  animation: community-card-item-transform-animation-fade 0.2s ease-in-out normal;
+}
+
+/*
+
+Community card item pop-up transform animation.
+
+*/
+
+@-o-keyframes community-card-item-pop-up-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: scale(5);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: scale(1);
+  }
+}
+
+@keyframes community-card-item-pop-up-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: scale(5);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: scale(1);
+  }
+}
+
+.community-card-item-pop-up-animation {
+  opacity: 1.0;
+  transform: scale(1);
+  z-index: 99999;
+  -o-animation: community-card-item-pop-up-animation-fade 0.50s ease-in-out normal;
+  animation: community-card-item-pop-up-animation-fade 0.50s ease-in-out normal;
+}
+
+@-o-keyframes community-card-x-pop-up-animation-fade {
+  0% {
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes community-card-x-pop-up-animation-fade {
+  0% {
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+.community-card-x-pop-up-animation {
+  opacity: 1.0;
+  z-index: 1;
+  -o-animation: community-card-x-pop-up-animation-fade 0.75s ease-in-out normal;
+  animation: community-card-x-pop-up-animation-fade 0.75s ease-in-out normal;
+}
+
+/*
+
+Hole card item outline animation.
+
+*/
+
+@-o-keyframes hole-card-item-outline-animation-fade {
+  0% {
+    outline-color: #dfb83700;
+  }
+
+  50% {
+    outline-color: #fdc91e;
+  }
+
+  100% {
+    outline-color: #dfb83700;
+  }
+}
+
+@keyframes hole-card-item-outline-animation-fade {
+  0% {
+    outline-color: #dfb83700;
+  }
+
+  50% {
+    outline-color: #fdc91e;
+  }
+
+  100% {
+    outline-color: #dfb83700;
+  }
+}
+
+.hole-card-item-outline-animation {
+  border-radius: 4px;
+  outline: solid 3px;
+  -o-animation: hole-card-item-outline-animation-fade 1s ease-in-out infinite;
+  animation: hole-card-item-outline-animation-fade 1s ease-in-out infinite;
+}
+
+/*
+
+Hole & Community card hint item outline animation.
+
+*/
+
+@-o-keyframes card-hint-item-outline-animation-fade {
+  0% {
+    outline-color: #dfb83700;
+  }
+
+  50% {
+    outline-color: #fdc91e;
+  }
+
+  100% {
+    outline-color: #dfb83700;
+  }
+}
+
+@keyframes card-hint-item-outline-animation-fade {
+  0% {
+    outline-color: #dfb83700;
+  }
+
+  50% {
+    outline-color: #fdc91e;
+  }
+
+  100% {
+    outline-color: #dfb83700;
+  }
+}
+
+.card-hint-item-outline-animation {
+  border-radius: 3px;
+  outline: solid 3px;
+  -o-animation: card-hint-item-outline-animation-fade 1s ease-in-out infinite;
+  animation: card-hint-item-outline-animation-fade 1s ease-in-out infinite;
+}
+
+/*
+
+Hole & Communtiy card item drop-shadow filter.
+
+*/
+
+.card-item-drop-shadow-filter {
+  filter: drop-shadow(0px 0px 10px #000);
+}
+
+.card-hint-drop-shadow-filter {
+  filter: drop-shadow(0px 0px 5px #000);
+}
+
+/*
+
+Hole & Communtiy card item hover translate animation.
+
+*/
+
+@-o-keyframes card-item-hover-translate-fade {
+  0% {
+    transform: translate(0px, -10px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes card-item-hover-translate-fade {
+  0% {
+    transform: translate(0px, -10px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.card-item-hover-translate {
+  transform: translate(0px, 0px);
+  -o-animation: card-item-hover-translate-fade 0.1s ease-in-out normal;
+  animation: card-item-hover-translate-fade 0.1s ease-in-out normal;
+}
+
+@-o-keyframes card-item-hover-translate-active-fade {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  100% {
+    transform: translate(0px, -10px);
+  }
+}
+
+@keyframes card-item-hover-translate-active-fade {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  100% {
+    transform: translate(0px, -10px);
+  }
+}
+
+.card-item-hover-translate:hover {
+  transform: translate(0px, -10px);
+  -o-animation: card-item-hover-translate-active-fade 0.1s ease-in-out normal;
+  animation: card-item-hover-translate-active-fade 0.1s ease-in-out normal;
+}
+
+/*
+
+Hole card item transform animation.
+
+*/
+
+@-o-keyframes hole-card-item-transform-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes hole-card-item-transform-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+.hole-card-item-transform-animation {
+  opacity: 1.0;
+  transform: translate(0px, 0px);
+  -o-animation: hole-card-item-transform-animation-fade 1s ease-in-out normal;
+  animation: hole-card-item-transform-animation-fade 1s ease-in-out normal;
+}
+
+/*
+
+Hole card item hint outline animation.
+
+*/
+
+@-o-keyframes card-hint-item-outline-animation-fade {
+  0% {
+    outline-color: #dfb83700;
+  }
+
+  50% {
+    outline-color: #fdc91e;
+  }
+
+  100% {
+    outline-color: #dfb83700;
+  }
+}
+
+@keyframes card-hint-item-outline-animation-fade {
+  0% {
+    outline-color: #dfb83700;
+  }
+
+  50% {
+    outline-color: #fdc91e;
+  }
+
+  100% {
+    outline-color: #dfb83700;
+  }
+}
+
+.card-hint-item-outline-animation {
+  border-radius: 3px;
+  outline: solid 3px;
+  -o-animation: card-hint-item-outline-animation-fade 1s ease-in-out infinite;
+  animation: card-hint-item-outline-animation-fade 1s ease-in-out infinite;
+}
+
+/*
+
+Hole card item hint outline border.
+
+*/
+
+.card-hint-item-outline-border {
+  border-radius: 3px;
+  outline: solid 3px;
+  outline-color: #fdc91e;
+}
+
+/*
+
+Hole card item hint opacity animation.
+
+*/
+
+@-o-keyframes card-hint-item-opacity-animation-fade {
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes card-hint-item-opacity-animation-fade {
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+.card-hint-item-opacity-animation {
+  opacity: 1.0;
+  -o-animation: card-hint-item-opacity-animation-fade 1s ease-in-out infinite;
+  animation: card-hint-item-opacity-animation-fade 1s ease-in-out infinite;
+}
+
+/*
+
+Game action panel button dropshadow filter.
+
+*/
+
+.game-action-button-drop-shadow-filter {
+  filter: drop-shadow(0px 0px 20px #000);
+}
+
+/*
+
+Hole card item pop-up transform animation.
+
+*/
+
+@-o-keyframes hole-card-item-pop-up-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, 150px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes hole-card-item-pop-up-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, 150px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+.hole-card-item-pop-up-animation {
+  opacity: 1.0;
+  transform: translate(0px, 0px);
+  -o-animation: hole-card-item-pop-up-animation-fade 0.5s ease-in-out normal;
+  animation: hole-card-item-pop-up-animation-fade 0.5s ease-in-out normal;
+}
+
+/*
+
+Winner hole card item halo transform animation.
+
+*/
+
+@-o-keyframes hole-card-item-halo-animation-fade {
+  0% {
+    filter: drop-shadow(0px 0px 20px #fff);
+  }
+
+  50% {
+    filter: drop-shadow(0px 0px 20px #fff);
+  }
+
+  100% {
+    filter: drop-shadow(0px 0px 20px #fff);
+  }
+}
+
+@keyframes hole-card-item-halo-animation-fade {
+  0% {
+    filter: drop-shadow(0px 0px 20px #fff);
+  }
+
+  50% {
+    filter: drop-shadow(0px 0px 20px #fff);
+  }
+
+  100% {
+    filter: drop-shadow(0px 0px 20px #fff);
+  }
+}
+
+.hole-card-item-halo-animation {
+  filter: drop-shadow(0px 0px 20px #fff);
+  -o-animation: hole-card-item-halo-animation-fade 10s ease-in-out infinite;
+  animation: hole-card-item-halo-animation-fade 10s ease-in-out infinite;
+}
+
+/*
+
+Current player icon halo transform animation.
+
+*/
+
+@-o-keyframes current-player-icon-halo-transform-animation-fade {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 5px #fff);
+  }
+
+  50% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 10px #fff);
+  }
+
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 5px #fff);
+  }
+}
+
+@keyframes current-player-icon-halo-transform-animation-fade {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 5px #fff);
+  }
+
+  50% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 10px #fff);
+  }
+
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 5px #fff);
+  }
+}
+
+.current-player-icon-halo-transform-animation {
+  filter: drop-shadow(0px 0px 10px #fff);
+  transform: scale(1);
+  -o-animation: current-player-icon-halo-transform-animation-fade 1s ease-in-out infinite;
+  animation: current-player-icon-halo-transform-animation-fade 1s ease-in-out infinite;
+}
+
+/*
+
+Player position D/SB/BB icon halo fade animation.
+
+*/
+
+@-o-keyframes player-position-icon-halo-transform-animation-fade {
+  0% {
+    filter: drop-shadow(0px 0px 10px #fff);
+  }
+
+  50% {
+    filter: drop-shadow(0px 0px 10px #fff);
+  }
+
+  100% {
+    filter: drop-shadow(0px 0px 10px #fff);
+  }
+}
+
+@keyframes player-position-icon-halo-transform-animation-fade {
+  0% {
+    filter: drop-shadow(0px 0px 10px #fff);
+  }
+
+  50% {
+    filter: drop-shadow(0px 0px 10px #fff);
+  }
+
+  100% {
+    filter: drop-shadow(0px 0px 10px #fff);
+  }
+}
+
+.player-position-icon-halo-transform-animation {
+  filter: drop-shadow(0px 0px 10px #fff);
+  -o-animation: player-position-icon-halo-transform-animation-fade 10s ease-in-out infinite;
+  animation: player-position-icon-halo-transform-animation-fade 10s ease-in-out infinite;
+}
+
+/*
+
+Join Game Icon & Typography halo fade animation.
+
+*/
+
+@-o-keyframes join-game-halo-transform-animation-fade {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 2px #fff);
+  }
+
+  50% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 10px #fff);
+  }
+
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 2px #fff);
+  }
+}
+
+@keyframes join-game-halo-transform-animation-fade {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 2px #fff);
+  }
+
+  50% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 10px #fff);
+  }
+
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 2px #fff);
+  }
+}
+
+.join-game-halo-transform-animation {
+  filter: drop-shadow(0px 0px 10px #fff);
+  transform: scale(1);
+  -o-animation: join-game-halo-transform-animation-fade 2s ease-in-out infinite;
+  animation: join-game-halo-transform-animation-fade 2s ease-in-out infinite;
+}
+
+/*
+
+Player Avatar Icon Halo Static.
+
+*/
+
+.player-avatar-halo {
+  filter: drop-shadow(0px 0px 6px #000);
+}
+
+/*
+
+Dealer svg icon halo fade animation 1.
+
+*/
+
+@-o-keyframes dealer-svg-icon-halo-fade-animation-1-fade {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 10px #000);
+  }
+
+  50% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 30px #000);
+  }
+
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 10px #000);
+  }
+}
+
+@keyframes dealer-svg-icon-halo-fade-animation-1-fade {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 10px #000);
+  }
+
+  50% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 30px #000);
+  }
+
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 10px #000);
+  }
+}
+
+.dealer-svg-icon-halo-fade-animation-1 {
+  filter: drop-shadow(0px 0px 10px #000);
+  transform: scale(1);
+  -o-animation: dealer-svg-icon-halo-fade-animation-1-fade 1s ease-in-out infinite;
+  animation: dealer-svg-icon-halo-fade-animation-1-fade 1s ease-in-out infinite;
+}
+
+/*
+
+Dealer svg card halo fade animation 1.
+
+*/
+
+@-o-keyframes dealer-svg-card-halo-fade-animation-1-fade {
+  0% {
+    filter: drop-shadow(0px 0px 20px #fff);
+  }
+
+  50% {
+    filter: drop-shadow(0px 0px 20px #fff);
+  }
+
+  100% {
+    filter: drop-shadow(0px 0px 20px #fff);
+  }
+}
+
+@keyframes dealer-svg-card-halo-fade-animation-1-fade {
+  0% {
+    filter: drop-shadow(0px 0px 20px #fff);
+  }
+
+  50% {
+    filter: drop-shadow(0px 0px 20px #fff);
+  }
+
+  100% {
+    filter: drop-shadow(0px 0px 20px #fff);
+  }
+}
+
+.dealer-svg-card-halo-fade-animation-1 {
+  filter: drop-shadow(0px 0px 20px #fff);
+  -o-animation: dealer-svg-card-halo-fade-animation-1-fade 10s ease-in-out infinite;
+  animation: dealer-svg-card-halo-fade-animation-1-fade 10s ease-in-out infinite;
+}
+
+/*
+
+Dealer tip button halo fade animation.
+
+*/
+
+.dealer-tip-button-halo-fade-animation {
+  filter: drop-shadow(0px 0px 0px #fff);
+}
+
+@-o-keyframes dealer-tip-button-halo-fade-animation-hover-fade {
+  0% {
+    filter: drop-shadow(0px 0px 5px #fff);
+  }
+
+  50% {
+    filter: drop-shadow(0px 0px 30px #fff);
+  }
+
+  100% {
+    filter: drop-shadow(0px 0px 5px #fff);
+  }
+}
+
+@keyframes dealer-tip-button-halo-fade-animation-hover-fade {
+  0% {
+    filter: drop-shadow(0px 0px 5px #fff);
+  }
+
+  50% {
+    filter: drop-shadow(0px 0px 30px #fff);
+  }
+
+  100% {
+    filter: drop-shadow(0px 0px 5px #fff);
+  }
+}
+
+.dealer-tip-button-halo-fade-animation:hover {
+  filter: drop-shadow(0px 0px 5px #fff);
+  -o-animation: dealer-tip-button-halo-fade-animation-hover-fade 2s ease-in-out infinite;
+  animation: dealer-tip-button-halo-fade-animation-hover-fade 2s ease-in-out infinite;
+}
+
+/*
+
+Countdown panel transform animation.
+
+*/
+
+@-o-keyframes countdown-panel-transform-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes countdown-panel-transform-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+.countdown-panel-transform-animation {
+  opacity: 1.0;
+  transform: translate(0px, 0px);
+  -o-animation: countdown-panel-transform-animation-fade 0.2s ease-in-out normal;
+  animation: countdown-panel-transform-animation-fade 0.2s ease-in-out normal;
+}
+
+/*
+
+Live Chat Panel opacity animation (Down).
+
+*/
+
+@-o-keyframes livechat-panel-opacity-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes livechat-panel-opacity-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+.livechat-panel-opacity-animation {
+  opacity: 1.0;
+  transform: translate(0px, 0px);
+  -o-animation: livechat-panel-opacity-animation-fade 0.2s ease-in-out normal;
+  animation: livechat-panel-opacity-animation-fade 0.2s ease-in-out normal;
+}
+
+/*
+
+Live Chat Panel opacity animation (Up).
+
+*/
+
+@-o-keyframes livechat-panel-opacity-animation-up-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes livechat-panel-opacity-animation-up-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+.livechat-panel-opacity-animation-up {
+  opacity: 1.0;
+  transform: translate(0px, 0px);
+  -o-animation: livechat-panel-opacity-animation-up-fade 0.25s ease-in-out normal;
+  animation: livechat-panel-opacity-animation-up-fade 0.25s ease-in-out normal;
+}
+
+/*
+
+Live Chat Message Opacity Animation Left.
+
+*/
+
+@-o-keyframes livechat-msg-l-opacity-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes livechat-msg-l-opacity-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+.livechat-msg-l-opacity-animation {
+  opacity: 1.0;
+  transform: translate(0px, 0px);
+  -o-animation: livechat-msg-l-opacity-animation-fade 0.2s ease-in-out normal;
+  animation: livechat-msg-l-opacity-animation-fade 0.2s ease-in-out normal;
+}
+
+/*
+
+Live Chat Message Opacity Animation Right.
+
+*/
+
+@-o-keyframes livechat-msg-r-opacity-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes livechat-msg-r-opacity-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+.livechat-msg-r-opacity-animation {
+  opacity: 1.0;
+  transform: translate(0px, 0px);
+  -o-animation: livechat-msg-r-opacity-animation-fade 0.2s ease-in-out normal;
+  animation: livechat-msg-r-opacity-animation-fade 0.2s ease-in-out normal;
+}
+
+/*
+
+Live Chat Message Opacity Animation Slide From Left.
+
+*/
+
+@-o-keyframes livechat-msg-slide-l-opacity-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, 50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes livechat-msg-slide-l-opacity-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, 50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+.livechat-msg-slide-l-opacity-animation {
+  opacity: 1.0;
+  transform: translate(0px, 0px);
+  -o-animation: livechat-msg-slide-l-opacity-animation-fade 0.2s ease-in-out normal;
+  animation: livechat-msg-slide-l-opacity-animation-fade 0.2s ease-in-out normal;
+}
+
+/*
+
+Live Chat Message Opacity Animation Slide From Right.
+
+*/
+
+@-o-keyframes livechat-msg-slide-r-opacity-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(50px, 0px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes livechat-msg-slide-r-opacity-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(50px, 0px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+.livechat-msg-slide-r-opacity-animation {
+  opacity: 1.0;
+  transform: translate(0px, 0px);
+  -o-animation: livechat-msg-slide-r-opacity-animation-fade 0.2s ease-in-out normal;
+  animation: livechat-msg-slide-r-opacity-animation-fade 0.2s ease-in-out normal;
+}
+
+/*
+
+Sit-Out Icon Opacity Animation Slide From Left.
+
+*/
+
+@-o-keyframes gen-icon-slide-l-opacity-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(-150px, 0px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes gen-icon-slide-l-opacity-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(-150px, 0px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+.gen-icon-slide-l-opacity-animation {
+  opacity: 1.0;
+  transform: translate(0px, 0px);
+  -o-animation: gen-icon-slide-l-opacity-animation-fade 0.2s ease-in-out normal;
+  animation: gen-icon-slide-l-opacity-animation-fade 0.2s ease-in-out normal;
+}
+
+/*
+
+Live Poker Solver Opacity Animation Main (Down).
+
+*/
+
+@-o-keyframes solver-panel-opacity-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes solver-panel-opacity-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+.solver-panel-opacity-animation {
+  opacity: 1.0;
+  transform: translate(0px, 0px);
+  -o-animation: solver-panel-opacity-animation-fade 0.2s ease-in-out normal;
+  animation: solver-panel-opacity-animation-fade 0.2s ease-in-out normal;
+}
+
+/*
+
+Live Poker Solver Opacity Animation Main (Up).
+
+*/
+
+@-o-keyframes solver-panel-opacity-animation-up-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes solver-panel-opacity-animation-up-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+.solver-panel-opacity-animation-up {
+  opacity: 1.0;
+  transform: translate(0px, 0px);
+  -o-animation: solver-panel-opacity-animation-up-fade 0.25s ease-in-out normal;
+  animation: solver-panel-opacity-animation-up-fade 0.25s ease-in-out normal;
+}
+
+/*
+
+Auto Options Opacity Animation Main.
+
+*/
+
+@-o-keyframes options-panel-opacity-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes options-panel-opacity-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+.options-panel-opacity-animation {
+  opacity: 1.0;
+  transform: translate(0px, 0px);
+  -o-animation: options-panel-opacity-animation-fade 0.2s ease-in-out normal;
+  animation: options-panel-opacity-animation-fade 0.2s ease-in-out normal;
+}
+
+/*
+
+Close Button Opacity Animation Default.
+
+*/
+
+@-o-keyframes close-btn-opacity-animation-fade {
+  0% {
+    opacity: 1.0;
+    transform: scale(1.0);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: scale(1.0);
+  }
+}
+
+@keyframes close-btn-opacity-animation-fade {
+  0% {
+    opacity: 1.0;
+    transform: scale(1.0);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: scale(1.0);
+  }
+}
+
+.close-btn-opacity-animation {
+  opacity: 0.5;
+  transform: scale(1.0);
+  -o-animation: close-btn-opacity-animation-fade 0.2s ease-in-out normal;
+  animation: close-btn-opacity-animation-fade 0.2s ease-in-out normal;
+}
+
+@-o-keyframes close-btn-opacity-animation-hover-fade {
+  0% {
+    opacity: 0.5;
+    transform: scale(1.0);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: scale(1.0);
+  }
+}
+
+@keyframes close-btn-opacity-animation-hover-fade {
+  0% {
+    opacity: 0.5;
+    transform: scale(1.0);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: scale(1.0);
+  }
+}
+
+.close-btn-opacity-animation:hover {
+  opacity: 1.0;
+  transform: scale(1.0);
+  -o-animation: close-btn-opacity-animation-hover-fade 0.2s ease-in-out normal;
+  animation: close-btn-opacity-animation-hover-fade 0.2s ease-in-out normal;
+}
+
+/*
+
+Game Actions Panel Opacity Animation.
+
+*/
+
+@-o-keyframes gameactions-panel-opacity-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, 0px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes gameactions-panel-opacity-animation-fade {
+  0% {
+    opacity: 0.0;
+    transform: translate(0px, 0px);
+  }
+
+  100% {
+    opacity: 1.0;
+    transform: translate(0px, 0px);
+  }
+}
+
+.gameactions-panel-opacity-animation {
+  opacity: 1.0;
+  transform: translate(0px, 0px);
+  -o-animation: gameactions-panel-opacity-animation-fade 0.2s ease-in-out normal;
+  animation: gameactions-panel-opacity-animation-fade 0.2s ease-in-out normal;
+}
+
+/*
+
+Game Action Button Halo Opacity Animation.
+
+*/
+
+.game-action-button-default-opacity-animation:hover {
+  background-color: rgba(59, 89, 152, 1);
+}
+
+.game-action-button-main-opacity-animation:hover {
+  background-color: rgba(217, 83, 79, 1);
+}
+
+/*
+
+Join Game Success Linear Progress Animation.
+
+*/
+
+@keyframes join-game-success-progress-linear {
+  0% {
+    background-size: 0 0px, 0px 0, 0% 4px, 0px 0;
+  }
+
+  10% {
+    background-size: 0 0px, 0px 0, 10% 4px, 0px 0;
+  }
+
+  20% {
+    background-size: 0 0px, 0px 0, 20% 4px, 0px 0;
+  }
+
+  30% {
+    background-size: 0 0px, 0px 0, 30% 4px, 0px 0;
+  }
+
+  40% {
+    background-size: 0 0px, 0px 0, 40% 4px, 0px 0;
+  }
+
+  50% {
+    background-size: 0 0px, 0px 0, 50% 4px, 0px 0;
+  }
+
+  60% {
+    background-size: 0 0px, 0px 0, 60% 4px, 0px 0;
+  }
+
+  70% {
+    background-size: 0 0px, 0px 0, 70% 4px, 0px 0;
+  }
+
+  80% {
+    background-size: 0 0px, 0px 0, 80% 4px, 0px 0;
+  }
+
+  90% {
+    background-size: 0 0px, 0px 0, 90% 4px, 0px 0;
+  }
+
+  100% {
+    background-size: 0 0px, 0px 0, 100% 4px, 0px 0;
+  }
+}
+
+.join-game-success-progress {
+  background-repeat: repeat-y;
+  background-image:
+    linear-gradient(to right, rgba(2, 188, 119, 1) 100%, rgba(2, 188, 119, 1) 100%),
+    linear-gradient(to bottom, rgba(2, 188, 119, 1) 100%, rgba(2, 188, 119, 1) 100%),
+    linear-gradient(to right, rgba(2, 188, 119, 1) 100%, rgba(2, 188, 119, 1) 100%),
+    linear-gradient(to bottom, rgba(2, 188, 119, 1) 100%, rgba(2, 188, 119, 1) 100%);
+  background-size: 100% 0px, 0px 100%, 100% 4px, 0px 100%;
+  animation: join-game-success-progress-linear 0.15s ease-in-out normal;
+  animation-play-state: running;
+}
+
+/*
+
+Join Game Failure Linear Progress Animation.
+
+*/
+
+@keyframes join-game-failed-progress-linear {
+  0% {
+    background-size: 0 0px, 0px 0, 0% 4px, 0px 0;
+  }
+
+  10% {
+    background-size: 0 0px, 0px 0, 10% 4px, 0px 0;
+  }
+
+  20% {
+    background-size: 0 0px, 0px 0, 20% 4px, 0px 0;
+  }
+
+  30% {
+    background-size: 0 0px, 0px 0, 30% 4px, 0px 0;
+  }
+
+  40% {
+    background-size: 0 0px, 0px 0, 40% 4px, 0px 0;
+  }
+
+  50% {
+    background-size: 0 0px, 0px 0, 50% 4px, 0px 0;
+  }
+
+  60% {
+    background-size: 0 0px, 0px 0, 60% 4px, 0px 0;
+  }
+
+  70% {
+    background-size: 0 0px, 0px 0, 70% 4px, 0px 0;
+  }
+
+  80% {
+    background-size: 0 0px, 0px 0, 80% 4px, 0px 0;
+  }
+
+  90% {
+    background-size: 0 0px, 0px 0, 90% 4px, 0px 0;
+  }
+
+  100% {
+    background-size: 0 0px, 0px 0, 100% 4px, 0px 0;
+  }
+}
+
+.join-game-failed-progress {
+  background-repeat: repeat-y;
+  background-image:
+    linear-gradient(to right, rgba(252, 90, 92, 1) 100%, rgba(252, 90, 92, 1) 100%),
+    linear-gradient(to bottom, rgba(252, 90, 92, 1) 100%, rgba(252, 90, 92, 1) 100%),
+    linear-gradient(to right, rgba(252, 90, 92, 1) 100%, rgba(252, 90, 92, 1) 100%),
+    linear-gradient(to bottom, rgba(252, 90, 92, 1) 100%, rgba(252, 90, 92, 1) 100%);
+  background-size: 100% 0px, 0px 100%, 100% 4px, 0px 100%;
+  animation: join-game-failed-progress-linear 0.15s ease-in-out normal;
+  animation-play-state: running;
+}
+
+/*
+
+Player Avatar Dropshadow Filter.
+
+*/
+
+.player-drop-shadow {
+  filter: drop-shadow(0px 0px 5px rgba(80, 80, 80, 1));
+}
+
+@-o-keyframes player-drop-shadow-animation-fade {
+  0% {
+    filter: drop-shadow(0px 0px 10px rgba(80, 80, 80, 1));
+  }
+
+  50% {
+    filter: drop-shadow(0px 0px 10px rgba(80, 80, 80, 1));
+  }
+
+  100% {
+    filter: drop-shadow(0px 0px 10px rgba(80, 80, 80, 1));
+  }
+}
+
+@keyframes player-drop-shadow-animation-fade {
+  0% {
+    filter: drop-shadow(0px 0px 10px rgba(80, 80, 80, 1));
+  }
+
+  50% {
+    filter: drop-shadow(0px 0px 10px rgba(80, 80, 80, 1));
+  }
+
+  100% {
+    filter: drop-shadow(0px 0px 10px rgba(80, 80, 80, 1));
+  }
+}
+
+.player-drop-shadow-animation {
+  filter: drop-shadow(0px 0px 10px rgba(80, 80, 80, 1));
+  -o-animation: player-drop-shadow-animation-fade 10s ease-in-out infinite;
+  animation: player-drop-shadow-animation-fade 10s ease-in-out infinite;
+}
+
+/*
+
+Custom Control Checkbox Color Overrides.
+
+*/
+
+.custom-control.custom-checkbox .custom-control-input:indeterminate~.custom-control-label::before,
+.custom-control.custom-checkbox .custom-control-input:checked~.custom-control-label::before,
+.custom-control.custom-radio .custom-control-input:checked~.custom-control-label::before {
+  border-color: rgba(40, 195, 215, 1);
+  background-color: rgba(40, 195, 215, 1);
+}
+
+.custom-control .custom-control-input:focus~.custom-control-label::before,
+.custom-control .custom-control-input:active~.custom-control-label::before {
+  border-color: rgba(40, 195, 215, 1);
+}
+
+.custom-control .custom-control-input:focus~.custom-control-label::before {
+  box-shadow: 0 0 0 2px rgba(40, 195, 215, 0.4);
+}
+
+/*
+
+Player Notifications Message Panel.
+
+*/
+
+@-o-keyframes player-notifications-message-animation-fade {
+  0% {
+    transform: scale(2.0);
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
+  }
+
+  100% {
+    transform: scale(1.0);
+    filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 1));
+  }
+}
+
+@keyframes player-notifications-message-animation-fade {
+  0% {
+    transform: scale(2.0);
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
+  }
+
+  100% {
+    transform: scale(1.0);
+    filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 1));
+  }
+}
+
+@-o-keyframes player-notifications-message-opacity-fade {
+  0% {
+    opacity: 0.0;
+  }
+
+  1% {
+    opacity: 1.0;
+  }
+
+  90% {
+    opacity: 1.0;
+  }
+
+  100% {
+    opacity: 0.0;
+  }
+}
+
+@keyframes player-notifications-message-opacity-fade {
+  0% {
+    opacity: 0.0;
+  }
+
+  1% {
+    opacity: 1.0;
+  }
+
+  90% {
+    opacity: 1.0;
+  }
+
+  100% {
+    opacity: 0.0;
+  }
+}
+
+.player-notifications-message-animation {
+  filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 1));
+  opacity: 0.0;
+  transform: scale(1);
+  transform-origin: left;
+  -o-animation: player-notifications-message-animation-fade 0.300s ease-in-out normal, player-notifications-message-opacity-fade 90s ease-in-out normal;
+  animation: player-notifications-message-animation-fade 0.300s ease-in-out normal, player-notifications-message-opacity-fade 90s ease-in-out normal;
+}
+
+/*
+
+Miscellaneous Style Component Overrides.
+
+*/
+
+.perfect-scrollbar-overflow-visible {
+  overflow: visible !important;
+}
+
+.btn-custom-seat-selection {
+  width: calc(3rem + 2px) !important;
+  line-height: 3rem !important;
+}
+
+.btn-custom-join-game {
+  filter: drop-shadow(0px 0px 15px rgba(179, 18, 23, 1));
+}
+
+.custom-drop-shadow-1 {
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
+}
+
+.livechat-enable-header {
+  transform: translateX(-85%);
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.livechat-enable-header:hover {
+  transform: translateX(0%);
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.livechat-icon-header {
+  opacity: 1.0;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.livechat-icon-header:hover {
+  opacity: 0.0;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.livechat-enable-header:hover>span>.livechat-icon-header {
+  opacity: 0.0;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+@media (max-width: 1280px) {
+  .livechat-enable-header {
+    display: none !important;
+  }
+}
+
+.playerlist-enable-header {
+  transform: translateX(85%);
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.playerlist-enable-header:hover {
+  transform: translateX(0%);
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.playerlist-icon-header {
+  opacity: 1.0;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.playerlist-icon-header:hover {
+  opacity: 0.0;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.playerlist-enable-header:hover>span>.playerlist-icon-header {
+  opacity: 0.0;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.profilepanel-enable-header {
+  transform: translateX(-85%);
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+  @media (max-device-width: 430px) {
+    transform: translateX(-10%);
+  }
+}
+
+
+.profilepanel-enable-header:hover {
+  transform: translateX(0%);
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.profilepanel-icon-header {
+  opacity: 1.0;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.profilepanel-icon-header:hover {
+  opacity: 0.0;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.profilepanel-enable-header:hover>div>span>.profilepanel-icon-header {
+  opacity: 0.0;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.nav-tabs-top>.nav .nav-link.active,
+.nav-tabs-top>div>.nav .nav-link.active {
+  border: none !important;
+}
+
+.playerlist-mobile-enable-header {
+  transform: translateX(85%);
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+.playerlist-mobile-enable-header:hover {
+  transform: translateX(0%);
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+
+/*
+
+Avatar Bet Timer Active Animation.
+
+*/
+
+@-o-keyframes avatar-bet-timer-scale-animation-fade {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes avatar-bet-timer-scale-animation-fade {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.avatar-bet-timer-scale-animation {
+  transform: scale(1);
+  -o-animation: avatar-bet-timer-scale-animation-fade 1s ease-in-out infinite;
+  animation: avatar-bet-timer-scale-animation-fade 1s ease-in-out infinite;
+}
+
+@-o-keyframes avatar-bet-timer-scale-x-animation-fade {
+  0% {
+    transform: scale(1);
+    filter: blur(2px);
+  }
+
+  50% {
+    transform: scale(1.2);
+    filter: blur(0px);
+  }
+
+  100% {
+    transform: scale(1);
+    filter: blur(2px);
+  }
+}
+
+@keyframes avatar-bet-timer-scale-x-animation-fade {
+  0% {
+    transform: scale(1);
+    filter: blur(2px);
+  }
+
+  50% {
+    transform: scale(1.2);
+    filter: blur(0px);
+  }
+
+  100% {
+    transform: scale(1);
+    filter: blur(2px);
+  }
+}
+
+.avatar-bet-timer-scale-x-animation {
+  transform: scale(1);
+  filter: blur(2px);
+  -o-animation: aavatar-bet-timer-scale-x-animation-fade 2s ease-in-out infinite;
+  animation: avatar-bet-timer-scale-x-animation-fade 2s ease-in-out infinite;
+}
+
+@-o-keyframes avatar-bet-timer-border-animation-fade {
+  0% {
+    box-shadow: 0 0 0 4px #0049C6;
+  }
+
+  50% {
+    box-shadow: 0 0 0 4px #c6000000;
+  }
+
+  100% {
+    box-shadow: 0 0 0 4px #0049C6;
+  }
+}
+
+@keyframes avatar-bet-timer-border-animation-fade {
+  0% {
+    box-shadow: 0 0 0 4px #0049C6;
+  }
+
+  50% {
+    box-shadow: 0 0 0 4px #c6000000;
+  }
+
+  100% {
+    box-shadow: 0 0 0 4px #0049C6;
+  }
+}
+
+.avatar-bet-timer-border-animation {
+  box-shadow: 0 0 0 4px #0049C6;
+  -o-animation: avatar-bet-timer-border-animation-fade 1s ease-in-out infinite;
+  animation: avatar-bet-timer-border-animation-fade 1s ease-in-out infinite;
+}
+
+/*
+
+Base styles for parent elements plus responsive features.
+
+*/
+
+.chat-wrapper {
+  position: relative;
+  display: flex;
+  flex: 1 1 100%;
+  min-height: $chat-wrapper-min-height;
+  width: 100%;
+}
+
+.chat-sidebox-1 {
+  display: none;
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-basis: $chat-sidebox-width;
+  flex-direction: column;
+  flex-grow: 0;
+  width: $chat-sidebox-width;
+  transform: translateX(-101%);
+
+  @include feature-rtl {
+    right: 0;
+    left: auto;
+    transform: translateX(101%);
+  }
+}
+
+.chat-sidebox-2 {
+  display: none;
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  // flex-basis: 20rem;
+  flex-direction: column;
+  flex-grow: 0;
+  width: $chat-sidebox-width;
+  transform: translateX(-101%);
+  
+  // @media (min-width: 2560) {
+  //   flex-basis: 40rem;
+  // }
+
+  @include feature-rtl {
+    right: 0;
+    left: auto;
+    transform: translateX(101%);
+  }
+}
+
+.chat-sidebox-open .chat-sidebox-1 {
+  transform: none !important;
+}
+
+.chat-search {
+  border-radius: 10rem;
+}
+
+.chat-contacts .list-group-item {
+  z-index: auto !important;
+  display: flex;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: $chat-contacts-padding-y;
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+
+  &.active {
+    font-weight: bold;
+  }
+
+  &:not(.active) {
+    opacity: .7;
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  &.online {
+    opacity: 1;
+  }
+
+  .chat-status {
+    font-weight: normal !important;
+  }
+}
+
+.chat-messages {
+  display: initial;
+  flex-direction: column;
+}
+
+.chat-message-left,
+.chat-message-right {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.chat-message-left {
+  margin-right: auto;
+
+  @include feature-rtl {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+.chat-message-right {
+  flex-direction: row-reverse;
+  margin-left: auto;
+
+  @include feature-rtl {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+
+.chat-scroll {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+
+Theme variants including light-style, material-style and dark-style.
+
+*/
+
+@if $enable-light-style {
+  .light-style {
+    @import "../_appwork/include";
+
+    .chat-sidebox-1 {
+      background: $white;
+      box-shadow: 0 0 0 $chat-sidebox-border-width $card-inner-border-color;
+    }
+
+    .chat-sidebox-2 {
+      background: $white;
+      box-shadow: 0 0 0 $chat-sidebox-border-width $card-inner-border-color;
+    }
+
+    .chat-contacts .list-group-item {
+      padding-right: $card-spacer-x;
+      padding-left: $card-spacer-x;
+
+      &:not(.active) {
+        color: $body-color;
+      }
+
+      .chat-status {
+        color: map-get($theme-colors, danger);
+      }
+
+      .chat-status .badge {
+        background: map-get($theme-colors, danger);
+      }
+
+      &.online .chat-status {
+        color: map-get($theme-colors, success);
+      }
+
+      &.online .chat-status .badge {
+        background: map-get($theme-colors, success);
+      }
+
+      &.active .chat-status {
+        color: $white;
+      }
+
+      &.active .chat-status .badge {
+        background: $white;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      .chat-sidebox-1 {
+        position: relative !important;
+        transform: none !important;
+      }
+
+      .chat-sidebox-2 {
+        position: relative !important;
+        transform: none !important;
+      }
+    }
+  }
+}
+
+@if $enable-material-style {
+  .material-style {
+    @import "../_appwork/include-material";
+
+    .chat-sidebox-1 {
+      background: $white;
+      box-shadow: 0 0 0 $chat-sidebox-border-width $card-inner-border-color;
+    }
+
+    .chat-sidebox-2 {
+      background: $white;
+      box-shadow: 0 0 0 $chat-sidebox-border-width $card-inner-border-color;
+    }
+
+    .chat-contacts .list-group-item {
+      padding-right: $card-spacer-x;
+      padding-left: $card-spacer-x;
+
+      &:not(.active) {
+        color: $body-color;
+      }
+
+      .chat-status {
+        color: map-get($theme-colors, danger);
+      }
+
+      .chat-status .badge {
+        background: map-get($theme-colors, danger);
+      }
+
+      &.online .chat-status {
+        color: map-get($theme-colors, success);
+      }
+
+      &.online .chat-status .badge {
+        background: map-get($theme-colors, success);
+      }
+
+      &.active .chat-status {
+        color: $white;
+      }
+
+      &.active .chat-status .badge {
+        background: $white;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      .chat-sidebox-1 {
+        position: relative !important;
+        transform: none !important;
+      }
+
+      .chat-sidebox-2 {
+        position: relative !important;
+        transform: none !important;
+      }
+    }
+  }
+}
+
+@if $enable-dark-style {
+  .dark-style {
+    @import "../_appwork/include-dark";
+
+    .chat-sidebox-1 {
+      background: $card-bg;
+    }
+
+    .chat-sidebox-2 {
+      background: $card-bg;
+    }
+
+    .chat-contacts .list-group-item {
+      padding-right: $card-spacer-x;
+      padding-left: $card-spacer-x;
+
+      &:not(.active) {
+        color: $body-color;
+      }
+
+      .chat-status {
+        color: map-get($theme-colors, danger);
+      }
+
+      .chat-status .badge {
+        background: map-get($theme-colors, danger);
+      }
+
+      &.online .chat-status {
+        color: map-get($theme-colors, success);
+      }
+
+      &.online .chat-status .badge {
+        background: map-get($theme-colors, success);
+      }
+
+      &.active .chat-status {
+        color: $white;
+      }
+    }
+
+    $grid-breakpoints: (
+      lg: 1280px,
+    );
+
+  .live-d-lg-none {
+    display: initial !important;
+  }
+
+  .live-d-flex-lg-none {
+    display: flex !important;
+  }
+
+  .live-d-lg-visible {
+    display: none !important;
+  }
+
+  .live-d-lg-initial {
+    display: none !important;
+  }
+
+  .live-d-lg-flex {
+    display: none !important;
+  }
+
+  .live-mt-lg-2 {
+    margin-top: initial !important;
+  }
+
+  .live-mb-lg-2 {
+    margin-bottom: initial !important;
+  }
+
+  .live-top-navigation {
+    z-index: 99999 !important;
+    position: sticky;
+  }
+
+  .nav-tabs-top>.tab-content,
+  .nav-tabs-right>.tab-content,
+  .nav-tabs-bottom>.tab-content,
+  .nav-tabs-left>.tab-content {
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    border: none;
+    background: rgba(255, 255, 255, 0.06);
+    background-clip: border-box;
+    background-clip: padding-box;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .nav-tabs .nav-link.active,
+  .nav-tabs .nav-item.show .nav-link {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.06);
+  }
+
+  .modal-slide .modal-dialog {
+    width: 30rem;
+    @media (max-device-width: 430px) {
+      width: 20rem;
+    }
+  }
+
+  .modal-backdrop {
+    opacity: 0 !important;
+  }
+
+  .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 1;
+  }
+
+  .form-control:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .form-control::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  @media only screen and (min-device-width: 430px) and (orientation: landscape) {
+    .live-d-lg-initial {
+      display: initial !important;
+    }
+    .live-d-lg-none {
+      display: none !important;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    .chat-sidebox-1 {
+      position: relative !important;
+      transform: none !important;
+    }
+
+    .chat-sidebox-2 {
+      position: relative !important;
+      transform: none !important;
+    }    
+
+    .live-d-flex-lg-none {
+      display: none !important;
+    }
+
+    .live-d-lg-visible {
+      display: initial !important;
+    }
+
+    .live-d-lg-initial {
+      display: initial !important;
+    }
+
+    .live-d-lg-flex {
+      display: flex !important;
+    }
+
+    .live-mt-lg-2 {
+      margin-top: 0.5rem !important;
+    }
+
+    .live-mb-lg-2 {
+      margin-bottom: 0.5rem !important;
+    }
+  }
+}
+}

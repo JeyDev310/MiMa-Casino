@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="26px" height="40px" viewBox="0 0 26 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>Drop</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Design-&amp;-Development" sketch:type="MSArtboardGroup" transform="translate(-567.000000, -400.000000)" fill="#231F1F">
+            <g id="Drop" sketch:type="MSLayerGroup" transform="translate(567.000000, 400.000000)">
+                <path d="M19.95,12.764 C17.771,10.288 16.571,7.03 16.571,3.591 C16.571,1.611 14.969,0 13,0 C11.03,0 9.428,1.611 9.428,3.591 C9.428,7.03 8.228,10.288 6.049,12.764 C2.091,17.261 0,22.153 0,26.909 C0,34.127 5.831,40 13,40 C20.168,40 25.999,34.127 25.999,26.909 C25.999,22.153 23.908,17.261 19.95,12.764 L19.95,12.764 Z M13,36.013 C12.447,36.013 12,35.565 12,35.013 C12,34.461 12.447,34.013 13,34.013 C16.864,34.013 20.008,30.868 20.008,27.003 C20.008,26.451 20.456,26.003 21.008,26.003 C21.56,26.003 22.008,26.451 22.008,27.003 C22.008,31.971 17.967,36.013 13,36.013 L13,36.013 Z" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

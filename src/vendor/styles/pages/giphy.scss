@@ -1,0 +1,39 @@
+/*
+
+Base styles for parent elements plus responsive features.
+
+*/
+
+.giphy__list_container {
+  overflow-x: hidden;
+  height: 400px !important;
+}
+
+.giphy__list_item {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.giphy__search_form>input {
+  border-radius: 5px;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+
+.giphy__parent_container {
+  border-radius: 20px !important;
+  filter: drop-shadow(0px 24px 32px rgba(0, 0, 0, 0.5));
+}
+
+.giphy__img_container {
+  border-radius: 5px !important;
+  width: 180px !important;
+  height: auto;
+}
+
+.giphy__img_container_wide {
+  border-radius: 5px !important;
+  width: 240px !important;
+  height: auto;
+}

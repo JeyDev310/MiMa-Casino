@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>Grid</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Design-&amp;-Development" sketch:type="MSArtboardGroup" transform="translate(-684.000000, -563.000000)" fill="#231F1F">
+            <g id="Grid" sketch:type="MSLayerGroup" transform="translate(684.000000, 563.000000)">
+                <path d="M10,25 L10,33 C10,33.552 9.553,34 9,34 L1,34 C0.447,34 0,33.552 0,33 L0,25 C0,24.448 0.447,24 1,24 L9,24 C9.553,24 10,24.448 10,25 L10,25 Z M9,12 L1,12 C0.447,12 0,12.448 0,13 L0,21 C0,21.552 0.447,22 1,22 L9,22 C9.553,22 10,21.552 10,21 L10,13 C10,12.448 9.553,12 9,12 L9,12 Z M9,0 L1,0 C0.447,0 0,0.448 0,1 L0,9 C0,9.552 0.447,10 1,10 L9,10 C9.553,10 10,9.552 10,9 L10,1 C10,0.448 9.553,0 9,0 L9,0 Z M21,12 L13,12 C12.447,12 12,12.448 12,13 L12,21 C12,21.552 12.447,22 13,22 L21,22 C21.553,22 22,21.552 22,21 L22,13 C22,12.448 21.553,12 21,12 L21,12 Z M33,0 L25,0 C24.447,0 24,0.448 24,1 L24,9 C24,9.552 24.447,10 25,10 L33,10 C33.553,10 34,9.552 34,9 L34,1 C34,0.448 33.553,0 33,0 L33,0 Z M21,0 L13,0 C12.447,0 12,0.448 12,1 L12,9 C12,9.552 12.447,10 13,10 L21,10 C21.553,10 22,9.552 22,9 L22,1 C22,0.448 21.553,0 21,0 L21,0 Z" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

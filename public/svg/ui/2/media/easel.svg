@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="34px" height="40px" viewBox="0 0 34 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>Easel</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Design-&amp;-Development" sketch:type="MSArtboardGroup" transform="translate(-803.000000, -400.000000)" fill="#231F1F">
+            <g id="Easel" sketch:type="MSLayerGroup" transform="translate(803.000000, 400.000000)">
+                <path d="M10.895,33.447 L7.895,39.447 C7.719,39.798 7.367,40 7,40 C6.849,40 6.697,39.966 6.553,39.895 C6.059,39.647 5.859,39.047 6.106,38.553 L9.106,32.553 C9.353,32.059 9.954,31.859 10.448,32.105 C10.942,32.353 11.142,32.953 10.895,33.447 L10.895,33.447 Z M24.895,32.553 C24.647,32.059 24.047,31.859 23.553,32.105 C23.059,32.353 22.859,32.953 23.106,33.447 L26.106,39.447 C26.282,39.798 26.634,40 27.002,40 C27.152,40 27.304,39.966 27.448,39.895 C27.942,39.647 28.142,39.047 27.895,38.553 L24.895,32.553 L24.895,32.553 Z M33,25 L32,25 L32,10 C32,8.346 30.655,7 29,7 L24,7 L24,11 L10.001,11 L10.001,7 L5,7 C3.346,7 2,8.346 2,10 L2,25 L1.001,25 C0.448,25 0,25.448 0,26 L0,30 C0,30.552 0.448,31 1.001,31 L33,31 C33.553,31 34.001,30.552 34.001,30 L34.001,26 C34.001,25.448 33.553,25 33,25 L33,25 Z M22.001,6 C22.001,5.448 21.553,5 21,5 L18,5 L18,1 C18,0.448 17.553,0 17,0 C16.448,0 16.001,0.448 16.001,1 L16.001,5 L13.001,5 C12.448,5 12,5.448 12,6 L12,9 L22.001,9 L22.001,6 L22.001,6 Z" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

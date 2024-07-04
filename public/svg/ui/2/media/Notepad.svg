@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="38px" viewBox="0 0 30 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>Notepad</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Design-&amp;-Development" sketch:type="MSArtboardGroup" transform="translate(-925.000000, -881.000000)" fill="#231F1F">
+            <g id="Notepad" sketch:type="MSLayerGroup" transform="translate(925.000000, 881.000000)">
+                <path d="M27.587,27 L19.001,35.586 L19.001,28 C19.001,27.448 19.449,27 20.001,27 L27.587,27 L27.587,27 Z M27,2 L26,2 L26,5 C26,6.654 24.654,8 23,8 C21.346,8 20,6.654 20,5 L20,2 L18,2 L18,5 C18,6.654 16.654,8 15,8 C13.346,8 12,6.654 12,5 L12,2 L10,2 L10,5 C10,6.654 8.654,8 7,8 C5.346,8 4,6.654 4,5 L4,2 L3,2 C1.346,2 0,3.346 0,5 L0,35 C0,36.654 1.346,38 3,38 L17.001,38 L17.001,28 C17.001,26.346 18.347,25 20.001,25 L30,25 L30,5 C30,3.346 28.654,2 27,2 L27,2 Z M27,38 C28.654,38 30,36.654 30,35 L30,27.586 L19.586,38 L27,38 L27,38 Z M7,6 C7.552,6 8,5.552 8,5 L8,1 C8,0.448 7.552,0 7,0 C6.448,0 6,0.448 6,1 L6,5 C6,5.552 6.448,6 7,6 L7,6 Z M15,6 C15.552,6 16,5.552 16,5 L16,1 C16,0.448 15.552,0 15,0 C14.448,0 14,0.448 14,1 L14,5 C14,5.552 14.448,6 15,6 L15,6 Z M23,6 C23.552,6 24,5.552 24,5 L24,1 C24,0.448 23.552,0 23,0 C22.448,0 22,0.448 22,1 L22,5 C22,5.552 22.448,6 23,6 L23,6 Z" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

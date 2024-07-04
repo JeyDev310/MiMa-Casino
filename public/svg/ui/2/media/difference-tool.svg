@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>Difference Tool </title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Design-&amp;-Development" sketch:type="MSArtboardGroup" transform="translate(-441.000000, -401.000000)" fill="#231F1F">
+            <g id="Difference-Tool-" sketch:type="MSLayerGroup" transform="translate(441.000000, 401.000000)">
+                <path d="M35,0 L15,0 C13.343,0 12,1.343 12,3 L12,12 L3,12 C1.343,12 0,13.343 0,15 L0,35 C0,36.657 1.343,38 3,38 L23,38 C24.656,38 26,36.657 26,35 L26,26 L35,26 C36.656,26 38,24.657 38,23 L38,3 C38,1.343 36.656,0 35,0 L35,0 Z M15,15 L23,15 L23,23 L15,23 L15,15 Z" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

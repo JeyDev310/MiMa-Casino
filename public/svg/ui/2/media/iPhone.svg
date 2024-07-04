@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="22px" height="43px" viewBox="0 0 22 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>iPhone</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Design-&amp;-Development" sketch:type="MSArtboardGroup" transform="translate(-688.000000, -718.000000)" fill="#231F1F">
+            <g id="iPhone" sketch:type="MSLayerGroup" transform="translate(688.000000, 718.000000)">
+                <path d="M19.965,1.173 C19.976,1.115 20,1.061 20,1 C20,0.448 19.553,0 19,0 L16,0 C15.447,0 15,0.448 15,1 L4,1 C2.346,1 1,2.346 1,4 L1,7 C0.447,7 0,7.448 0,8 L0,10 C0,10.552 0.447,11 1,11 L1,12 C0.447,12 0,12.448 0,13 L0,15 C0,15.552 0.447,16 1,16 L1,40 C1,41.654 2.346,43 4,43 L19,43 C20.654,43 22,41.654 22,40 L22,4 C22,2.685 21.145,1.578 19.965,1.173 L19.965,1.173 Z M11.5,41 C10.672,41 10,40.329 10,39.5 C10,38.672 10.672,38 11.5,38 C12.329,38 13,38.672 13,39.5 C13,40.329 12.329,41 11.5,41 L11.5,41 Z M19,36 L4,36 C3.447,36 3,35.552 3,35 C3,34.448 3.447,34 4,34 L19,34 C19.553,34 20,34.448 20,35 C20,35.552 19.553,36 19,36 L19,36 Z M19,10 L4,10 C3.447,10 3,9.552 3,9 C3,8.448 3.447,8 4,8 L19,8 C19.553,8 20,8.448 20,9 C20,9.552 19.553,10 19,10 L19,10 Z" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

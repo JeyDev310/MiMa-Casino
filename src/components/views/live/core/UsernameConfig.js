@@ -1,0 +1,2 @@
+export const FIELD_USERNAME_STR_LENGTH = 24
+export const FIELD_USERNAME_PROVIDER_ID = '_e5c765f0_'

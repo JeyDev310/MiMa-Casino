@@ -1,0 +1,230 @@
+@-o-keyframes network-monitor-online-animation-fade {
+  0% {
+    opacity: 1.0;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0.0;
+    transform: scale(1);
+  }
+}
+
+@keyframes network-monitor-online-animation-fade {
+  0% {
+    opacity: 1.0;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0.0;
+    transform: scale(1);
+  }
+}
+
+.network-monitor-online-animation {
+  opacity: 0;
+  transform: scale(1);
+  -o-animation: network-monitor-online-animation-fade 2s ease-in-out normal;
+  animation: network-monitor-online-animation-fade 2s ease-in-out normal;
+}
+
+@-o-keyframes network-monitor-offline-animation-fade {
+  0% {
+    opacity: 1.0;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0.0;
+    transform: scale(1);
+  }
+}
+
+@keyframes network-monitor-offline-animation-fade {
+  0% {
+    opacity: 1.0;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0.0;
+    transform: scale(1);
+  }
+}
+
+.network-monitor-offline-animation {
+  opacity: 0;
+  transform: scale(1);
+  -o-animation: network-monitor-offline-animation-fade 5s ease-in-out normal;
+  animation: network-monitor-offline-animation-fade 5s ease-in-out normal;
+}
+
+@-o-keyframes network-monitor-icon-wifi-animation-fade {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes network-monitor-icon-wifi-animation-fade {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.network-monitor-icon-wifi-animation {
+  transform: scale(1);
+  -o-animation: network-monitor-icon-wifi-animation-fade 0.5s ease-in-out infinite;
+  animation: network-monitor-icon-wifi-animation-fade 0.5s ease-in-out infinite;
+}
+
+.network-monitor-icon-wifi {
+  width: 6em;
+  height: 6em;
+  fill: #FFFFFF !important;
+  -webkit-transition: all .1s;
+  -o-transition: all .1s;
+  transition: all .1s;
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 1));
+}
+
+.network-monitor-subtitle-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@-o-keyframes game-status-icon-notch-animation-fade {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes game-status-icon-notch-animation-fade {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.game-status-icon-notch-animation {
+  transform: scale(1);
+  -o-animation: game-status-icon-notch-animation-fade 2s ease-in-out infinite;
+  animation: game-status-icon-notch-animation-fade 2s ease-in-out infinite;
+}
+
+.game-status-icon-notch {
+  opacity: 0.5;
+  font-size: 50px !important;
+  color: #FFFFFF !important;
+  fill: #FFFFFF !important;
+  -webkit-transition: all .1s;
+  -o-transition: all .1s;
+  transition: all .1s;
+  filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 1));
+}
+
+@-o-keyframes game-status-icon-notch-opacity-fade {
+  0% {
+    filter: blur(2px) drop-shadow(0px 0px 6px rgba(255, 255, 255, 1));
+  }
+
+  50% {
+    filter: blur(0px) drop-shadow(0px 0px 6px rgba(255, 255, 255, 1));
+  }
+
+  100% {
+    filter: blur(2px) drop-shadow(0px 0px 6px rgba(255, 255, 255, 1));
+  }
+}
+
+@keyframes game-status-icon-notch-opacity-fade {
+  0% {
+    filter: blur(2px) drop-shadow(0px 0px 6px rgba(255, 255, 255, 1));
+  }
+
+  50% {
+    filter: blur(0px) drop-shadow(0px 0px 6px rgba(255, 255, 255, 1));
+  }
+
+  100% {
+    filter: blur(2px) drop-shadow(0px 0px 6px rgba(255, 255, 255, 1));
+  }
+}
+
+.game-status-icon-notch-opacity {
+  filter: blur(2px) drop-shadow(0px 0px 6px rgba(255, 255, 255, 1));
+  -o-animation: game-status-icon-notch-opacity-fade 2s ease-in-out infinite;
+  animation: game-status-icon-notch-opacity-fade 2s ease-in-out infinite;
+}
+
+@-o-keyframes status-icon-circle-animation-fade {
+  0% {
+    filter: blur(2px);
+    opacity: 1;
+  }
+
+  50% {
+    filter: blur(0px);
+    opacity: 0.5;
+  }
+
+  100% {
+    filter: blur(2px);
+    opacity: 1;
+  }
+}
+
+@keyframes status-icon-circle-animation-fade {
+  0% {
+    filter: blur(2px);
+    opacity: 1;
+  }
+
+  50% {
+    filter: blur(0px);
+    opacity: 0.5;
+  }
+
+  100% {
+    filter: blur(2px);
+    opacity: 1;
+  }
+}
+
+.status-icon-circle-animation {
+  opacity: 1;
+  filter: blur(2px);
+  -o-animation: status-icon-circle-animation-fade 0.5s ease-in-out infinite;
+  animation: status-icon-circle-animation-fade 0.5s ease-in-out infinite;
+}

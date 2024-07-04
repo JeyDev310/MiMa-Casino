@@ -1,0 +1,144 @@
+# Use the latest 2.1 version of CircleCI pipeline process engine.
+# See: https://circleci.com/docs/2.0/configuration-reference
+version: 2.1
+
+# Orbs are reusable packages of CircleCI configuration that you may share across projects, enabling you to create encapsulated, parameterized commands, jobs, and executors that can be used across multiple projects.
+# See: https://circleci.com/docs/2.0/orb-intro/
+orbs:
+  # The python orb contains a set of prepackaged CircleCI configuration you can use repeatedly in your configuration files
+  # Orb commands and jobs help you with common scripting around a language/tool
+  # so you dont have to copy and paste it everywhere.
+  # See the orb documentation here: https://circleci.com/developer/orbs/orb/circleci/python
+  python: circleci/python@1.5.0
+
+# Define a job to be invoked later in a workflow.
+# See: https://circleci.com/docs/2.0/configuration-reference/#jobs
+jobs:
+  deploy-gameplay-production:
+    docker:
+      - image: cimg/node:14.19.1
+    steps:
+      - add_ssh_keys
+      - run:
+          name: Installing dependencies
+          command: sudo apt update && sudo apt install git -y && git --version
+      - run:
+          name: Adding hostname to ~/.ssh/known_hosts
+          command: ssh-keyscan -H $SSH_HOSTNAME >> ~/.ssh/known_hosts
+      - run:
+          name: Checking OS on target VM
+          command: ssh $SSH_USERNAME@$SSH_HOSTNAME "lsb_release --all"
+      - run:
+          name: Checking python version on target VM
+          command: ssh $SSH_USERNAME@$SSH_HOSTNAME "python3 --version"
+      - run:
+          name: Listing of all open files (lsof)
+          command: ssh $SSH_USERNAME@$SSH_HOSTNAME "lsof -i -P -n"
+      - run:
+          name: Listing all current ports in LISTEN state (netstat)
+          command: ssh $SSH_USERNAME@$SSH_HOSTNAME "netstat -tulpn | grep LISTEN"
+      - run:
+          name: Network load overview (netstat)
+          command: ssh $SSH_USERNAME@$SSH_HOSTNAME "netstat -s"
+      - run:
+          name: Listing all active running services (systemd) (pre-deploy)
+          command: ssh $SSH_USERNAME@$SSH_HOSTNAME "systemctl list-units --type=service --state=active"
+      - run:
+          name: Determining previous deployments
+          command: |
+            ssh $SSH_USERNAME@$SSH_HOSTNAME "wget -O - --header 'Authorization: token $GH_TOKEN' https://raw.githubusercontent.com/asymptote-io/livepokerstudio/main/.circleci/extended/production/tasks/check-server-production.sh | bash"
+      - run:
+          name: Deploying livepokerstudio-gameplay
+          command: |
+            curl -o- -L https://yarnpkg.com/install.sh | bash
+            source ~/.bashrc
+            git clone https://$GH_TOKEN@github.com/asymptote-io/livepokerstudio-gameplay.git
+            cd livepokerstudio-gameplay
+            yarn install
+            yarn build-stage
+            ssh $SSH_USERNAME@$SSH_HOSTNAME "rm -rf /root/client"
+            scp -r build $SSH_USERNAME@$SSH_HOSTNAME:/root/client
+            ssh $SSH_USERNAME@$SSH_HOSTNAME "rm -rf /root/livepokerstudio/server/frontend/build"
+            ssh $SSH_USERNAME@$SSH_HOSTNAME "cp -avr /root/client/ /root/livepokerstudio/server/frontend/build/"
+      - run:
+          name: Redis list all available keys (redis-cli) (post-deploy)
+          command: ssh $SSH_USERNAME@$SSH_HOSTNAME "redis-cli KEYS \*"
+      - run:
+          name: Redis memory inspection (redis-cli) (post-deploy)
+          command: ssh $SSH_USERNAME@$SSH_HOSTNAME "redis-cli info memory"
+      - run:
+          name: RedisJSON status inspection (redis-cli) (post-deploy)
+          command: ssh $SSH_USERNAME@$SSH_HOSTNAME "redis-cli info modules"
+      - run:
+          name: Check nginx status (lsof) (post-deploy)
+          command: ssh $SSH_USERNAME@$SSH_HOSTNAME "lsof -i TCP:80"
+      - run:
+          name: Listing all active running services (systemd) (post-deploy)
+          command: ssh $SSH_USERNAME@$SSH_HOSTNAME "systemctl list-units --type=service --state=active"
+      - run:
+          name: Listing of all open files (lsof) (post-deploy)
+          command: ssh $SSH_USERNAME@$SSH_HOSTNAME "lsof -i -P -n"
+  deploy-gameplay-development:
+    docker:
+      - image: cimg/node:14.19.1
+    steps:
+      - add_ssh_keys
+      - run:
+          name: Installing dependencies
+          command: sudo apt update && sudo apt install git -y && git --version
+      - run:
+          name: Adding hostname to ~/.ssh/known_hosts
+          command: ssh-keyscan -H $SSH_HOSTNAME_DEVELOPMENT >> ~/.ssh/known_hosts
+      - run:
+          name: Checking OS on target VM
+          command: ssh $SSH_USERNAME@$SSH_HOSTNAME_DEVELOPMENT "lsb_release --all"
+      - run:
+          name: Listing of all open files (lsof)
+          command: ssh $SSH_USERNAME@$SSH_HOSTNAME_DEVELOPMENT "lsof -i -P -n"
+      - run:
+          name: Listing all current ports in LISTEN state (netstat)
+          command: ssh $SSH_USERNAME@$SSH_HOSTNAME_DEVELOPMENT "netstat -tulpn | grep LISTEN"
+      - run:
+          name: Network load overview (netstat)
+          command: ssh $SSH_USERNAME@$SSH_HOSTNAME_DEVELOPMENT "netstat -s"
+      - run:
+          name: Listing all active running services (systemd) (pre-deploy)
+          command: ssh $SSH_USERNAME@$SSH_HOSTNAME_DEVELOPMENT "systemctl list-units --type=service --state=active"
+      - run:
+          name: Deploying livepokerstudio-gameplay (current dev-branch)
+          command: |
+            curl -o- -L https://yarnpkg.com/install.sh | bash
+            source ~/.bashrc
+            git clone https://$GH_TOKEN@github.com/asymptote-io/livepokerstudio-gameplay.git --branch dev-ui
+            cd livepokerstudio-gameplay
+            git branch
+            yarn install
+            yarn build-stage
+            scp -r build/* $SSH_USERNAME@$SSH_HOSTNAME_DEVELOPMENT:/var/www/dev.pokerstudio.online/html
+      - run:
+          name: Check nginx status (lsof) (post-deploy)
+          command: ssh $SSH_USERNAME@$SSH_HOSTNAME_DEVELOPMENT "lsof -i TCP:80"
+      - run:
+          name: Listing all active running services (systemd) (post-deploy)
+          command: ssh $SSH_USERNAME@$SSH_HOSTNAME_DEVELOPMENT "systemctl list-units --type=service --state=active"
+      - run:
+          name: Listing of all open files (lsof) (post-deploy)
+          command: ssh $SSH_USERNAME@$SSH_HOSTNAME_DEVELOPMENT "lsof -i -P -n"
+
+# Invoke jobs via workflows
+# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
+workflows:
+  build-and-deploy-production:
+    jobs:
+      - deploy-gameplay-production:
+          name: deploy-gameplay-production
+          filters:
+            branches:
+              only: main
+  build-and-deploy-development:
+    jobs:
+      - deploy-gameplay-development:
+          name: deploy-gameplay-development
+          filters:
+            branches:
+              only: dev-ui

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>Paragraph</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Design-&amp;-Development" sketch:type="MSArtboardGroup" transform="translate(-81.000000, -1041.000000)" fill="#231F1F">
+            <g id="Paragraph" sketch:type="MSLayerGroup" transform="translate(81.000000, 1041.000000)">
+                <path d="M36,0 L10.947,0 C4.911,0 0,4.932 0,10.994 C0,17.057 4.911,21.988 10.947,21.988 L17.988,21.988 L17.988,36 C17.988,37.104 18.883,38 19.988,38 C21.092,38 21.988,37.104 21.988,36 L21.988,4 L25.998,4 L25.998,36 C25.998,37.104 26.894,38 27.998,38 C29.103,38 29.998,37.104 29.998,36 L29.998,4 L36,4 C37.104,4 38,3.104 38,2 C38,0.895 37.104,0 36,0" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

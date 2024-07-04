@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="56px" height="19px" viewBox="0 0 56 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>Nerdy Glasses</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Design-&amp;-Development" sketch:type="MSArtboardGroup" transform="translate(-792.000000, -891.000000)" fill="#231F1F">
+            <g id="Nerdy-Glasses" sketch:type="MSLayerGroup" transform="translate(792.000000, 891.000000)">
+                <path d="M54.592,1.743 C47.092,-0.581 38.907,-0.581 31.407,1.743 L30.557,2.006 L25.442,2.006 L24.592,1.743 C17.092,-0.581 8.907,-0.581 1.407,1.743 L0,2.179 L0,7.464 L1.376,14.231 C1.955,16.991 4.424,18.995 7.249,18.995 L18.751,18.995 C21.575,18.995 24.044,16.991 24.623,14.231 L25.929,8.006 L30.11,8.006 L31.376,14.231 C31.955,16.991 34.424,18.995 37.249,18.995 L48.751,18.995 C51.575,18.995 54.044,16.991 54.623,14.231 L55.957,7.874 L55.999,2.179 L54.592,1.743 L54.592,1.743 Z M21.999,7.257 L20.708,13.412 C20.515,14.332 19.692,15 18.751,15 L7.249,15 C6.307,15 5.484,14.332 5.291,13.411 L3.999,7.257 L3.999,5.155 C9.859,3.605 16.14,3.605 21.999,5.155 L21.999,7.257 L21.999,7.257 Z M51.999,7.257 L50.708,13.412 C50.515,14.332 49.692,15 48.751,15 L37.249,15 C36.307,15 35.484,14.332 35.291,13.411 L33.999,7.257 L33.999,5.155 C39.859,3.605 46.14,3.605 51.999,5.155 L51.999,7.257 L51.999,7.257 Z" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

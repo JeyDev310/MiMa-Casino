@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="38px" viewBox="0 0 24 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>Mouse</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Design-&amp;-Development" sketch:type="MSArtboardGroup" transform="translate(-568.000000, -881.000000)" fill="#231F1F">
+            <g id="Mouse" sketch:type="MSLayerGroup" transform="translate(568.000000, 881.000000)">
+                <path d="M23.22075,7.34125 C22.82075,4.74425 20.04875,1.35525 17.21775,0.62025 C13.73975,-0.20675 10.26075,-0.20675 6.78275,0.62025 C3.95175,1.35525 1.17975,4.74425 0.78075,7.34125 C-0.26025,15.11925 -0.26025,22.89825 0.78075,30.67625 C1.17975,33.27325 3.95175,36.66125 6.78275,37.39725 C10.26075,38.22425 13.73975,38.22425 17.21775,37.39725 C20.04875,36.66125 22.82075,33.27325 23.22075,30.67625 C24.26075,22.89825 24.26075,15.11925 23.22075,7.34125 L23.22075,7.34125 Z M12.00075,31.02425 C10.89575,31.02425 9.99975,30.12925 9.99975,29.02425 C9.99975,27.91925 10.89575,27.02425 12.00075,27.02425 C13.10475,27.02425 14.00075,27.91925 14.00075,29.02425 C14.00075,30.12925 13.10475,31.02425 12.00075,31.02425 L12.00075,31.02425 Z" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

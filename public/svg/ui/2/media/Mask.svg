@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="39px" height="30px" viewBox="0 0 39 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Design-&amp;-Development" sketch:type="MSArtboardGroup" transform="translate(-320.000000, -885.000000)" fill="#231F1F">
+            <g id="Mask" sketch:type="MSLayerGroup" transform="translate(320.000000, 885.000000)">
+                <path d="M24,0 C15.715,0 9,6.716 9,15 C9,23.284 15.715,30 24,30 C32.284,30 39,23.284 39,15 C39,6.716 32.284,0 24,0 L24,0 Z M23.989,21.391 C23.989,22.273 23.273,22.988 22.389,22.988 L13.765,22.988 C12.039,20.782 11,18.012 11,15 C11,11.988 12.039,9.218 13.765,7.012 L22.389,7.012 C23.273,7.012 23.989,7.727 23.989,8.609 L23.989,21.391 L23.989,21.391 Z M9,22.988 C9,23.541 8.552,23.988 8,23.988 L2.666,23.988 C1.196,23.988 0,22.823 0,21.391 L0,8.609 C0,7.177 1.196,6.012 2.666,6.012 L8,6.012 C8.552,6.012 9,6.459 9,7.012 C9,7.564 8.552,8.012 8,8.012 L2.666,8.012 C2.298,8.012 2,8.28 2,8.609 L2,21.391 C2,21.72 2.298,21.988 2.666,21.988 L8,21.988 C8.552,21.988 9,22.435 9,22.988 L9,22.988 Z" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

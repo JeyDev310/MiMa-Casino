@@ -1,0 +1,6 @@
+export const DEALER_CARD_MAP_LIVE_INPUT_DP = 'DP*'
+export const DEALER_CARD_MAP_LIVE_INPUT_RD = 'RD*'
+export const DEALER_CARD_MAP_LIVE_INPUT_RE = 'RE*'
+export const DEALER_CARD_MAP_LIVE_INPUT_RG = 'RG*'
+export const DEALER_CARD_MAP_LIVE_INPUT_SD = 'SD*'
+export const DEALER_CARD_MAP_LIVE_INPUT_SP = 'SP*'

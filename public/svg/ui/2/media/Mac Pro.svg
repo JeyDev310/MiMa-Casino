@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="38px" viewBox="0 0 30 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>Mac Pro</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Design-&amp;-Development" sketch:type="MSArtboardGroup" transform="translate(-1165.000000, -721.000000)" fill="#231F1F">
+            <g id="Mac-Pro" sketch:type="MSLayerGroup" transform="translate(1165.000000, 721.000000)">
+                <path d="M15,0 C6.715,0 0,2.239 0,5 L0,33 C0,35.761 6.715,38 15,38 C23.284,38 30,35.761 30,33 L30,5 C30,2.239 23.284,0 15,0 L15,0 Z M15.715,27.933 C15.457,27.869 15.215,27.776 14.988,27.66 C14.761,27.776 14.519,27.869 14.261,27.933 C12.157,28.453 9.88,26.908 9.175,24.481 C8.47,22.055 9.605,19.666 11.709,19.146 C12.846,18.865 14.025,19.202 14.988,19.94 C15.95,19.202 17.13,18.865 18.267,19.146 C19.105,19.354 19.78,19.865 20.255,20.55 C19.486,21.093 18.98,21.986 18.98,23 C18.98,24.061 19.533,24.988 20.362,25.521 C19.392,27.324 17.496,28.374 15.715,27.933 L15.715,27.933 Z M15.751,14.745 C16.354,14.134 17.176,13.894 17.96,14.004 C18.069,14.798 17.832,15.631 17.229,16.242 C16.627,16.852 15.804,17.092 15.021,16.982 C14.912,16.188 15.149,15.355 15.751,14.745 L15.751,14.745 Z M15,8 C12.654,8 5,7.784 5,5 C5,4.448 5.447,4 6,4 C6.477,4 6.875,4.333 6.976,4.778 C7.53,5.222 10.342,6 15,6 C19.658,6 22.47,5.222 23.024,4.778 C23.125,4.333 23.523,4 24,4 C24.553,4 25,4.448 25,5 C25,7.784 17.346,8 15,8 L15,8 Z" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

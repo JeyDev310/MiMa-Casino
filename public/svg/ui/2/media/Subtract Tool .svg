@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>Subtract Tool </title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Design-&amp;-Development" sketch:type="MSArtboardGroup" transform="translate(-561.000000, -1361.000000)" fill="#231F1F">
+            <g id="Subtract-Tool-" sketch:type="MSLayerGroup" transform="translate(561.000000, 1361.000000)">
+                <path d="M34.999,0 L15,0 C13.343,0 12,1.343 12,3 L12,12 L3,12 C1.343,12 0,13.343 0,15 L0,35 C0,36.657 1.343,38 3,38 L22.999,38 C24.656,38 25.999,36.657 25.999,35 L25.999,26 L34.999,26 C36.656,26 37.999,24.657 37.999,23 L37.999,3 C37.999,1.343 36.656,0 34.999,0 L34.999,0 Z M16,4 L34,4 L34,22 L16,22 L16,4 Z" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
